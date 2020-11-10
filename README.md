@@ -4,10 +4,10 @@ The temporal logic toolkit MTL extended is an extension of the Python library [t
 
 ## How to Use
 
-To use the module, there is no currently available pip installation; therefore, everything will have to be organized locally by you.
+To use the module, there is currently no available pip installation; therefore, everything will have to be organized locally by you.
 
 ### Dependencies
-In order to run take advantage of the library, the following dependencies must be installed:
+In order to take advantage of the library, the following dependencies must be installed:
 
 1. Python3
 2. TLTk MTL Python Library
