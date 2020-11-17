@@ -131,8 +131,10 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#opPropExpr.
     def visitOpPropExpr(self, ctx:STQLParser.OpPropExprContext):
-        return self.visitChildren(ctx)
-
+        pred1 = self.visit(ctx.getRuleContext().getChild(0))
+        pred2 = self.visit(ctx.getRuleContext().getChild(2))
+        
+        return MTL.Or(MTL.Not(pred1), pred2, self.mode)
 
     # Visit a parse tree produced by STQLParser#opNegExpr.
     def visitOpNegExpr(self, ctx:STQLParser.OpNegExprContext):
