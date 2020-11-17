@@ -18,7 +18,7 @@ from STQLVisitor import STQLVisitor as Visitor
 # @param mode:       The specified computation mode to be used for MTL. The
 #                    default mode is 'cpu_threaded'
 
-def parse_mtl(formula, predicates, mode='cpu_threaded'):
+def parse_mtl(formula, predicates, mode='cpu'):
     # convert string to ANTLRv4 InputStream
     inputstream = antlr4.InputStream(formula)
 
