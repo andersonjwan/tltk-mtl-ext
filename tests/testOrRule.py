@@ -14,7 +14,7 @@ def testOrRule():
 	
 	assert isinstance(MTLE.parse_mtl('pred1 || pred1', preds), MTL.Or), printFail(1)
 	printPass(1)
-	assert isinstance(MTLE.parse_mtl('pred1 | pred1 || pred1 or pred1', preds), MTL.Or), printFail(2)
+	assert isinstance(MTLE.parse_mtl('pred1 | pred1 || pred1 \/ pred1 or pred1', preds), MTL.Or), printFail(2)
 	printPass(2)
 	assert isinstance(MTLE.parse_mtl('pred1 or !pred2 || pred3', preds), MTL.Or), printFail(3)
 	printPass(3)
