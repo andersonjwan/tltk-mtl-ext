@@ -24,9 +24,9 @@ def testNegationRule():
 	printPass(5)
 
 def printPass(test_num):
-    print('[Negation Test] Assertion No. %02d PASSED.' % (test_num))
+    print('[Negation Rule Test] Assertion No. %02d PASSED.' % (test_num))
 
 def printFail(test_num):
-    return '[Negation Test] Assertion No. %02d FAILED' % (test_num)
+    return '[Negation Rule Test] Assertion No. %02d FAILED' % (test_num)
 
 testNegationRule()
