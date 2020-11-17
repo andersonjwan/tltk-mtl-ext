@@ -14,7 +14,7 @@ def testAndRule():
 	
 	assert isinstance(MTLE.parse_mtl('pred1 && pred1', preds), MTL.And), printFail(1)
 	printPass(1)
-	assert isinstance(MTLE.parse_mtl('pred1 & pred1 && pred1 and pred1', preds), MTL.And), printFail(2)
+	assert isinstance(MTLE.parse_mtl('pred1 & pred1 && pred1 /\ pred1 and pred1', preds), MTL.And), printFail(2)
 	printPass(2)
 	assert isinstance(MTLE.parse_mtl('pred1 && !pred2 && pred3', preds), MTL.And), printFail(3)
 	printPass(3)
