@@ -45,7 +45,9 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#opNextExpr.
     def visitOpNextExpr(self, ctx:STQLParser.OpNextExprContext):
-        return self.visitChildren(ctx)
+        pred = self.visit(ctx.getRuleContext().getChild(1))
+
+        return MTL.Next(pred)
 
 
     # Visit a parse tree produced by STQLParser#variableEquivalenceExpr.
@@ -190,9 +192,7 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#opNextTauExpr.
     def visitOpNextTauExpr(self, ctx:STQLParser.OpNextTauExprContext):
-        pred = self.visit(ctx.getRuleContext().getChild(0))
-
-        return MTL.Next(pred, self.mode)
+        return self.visitChildren(ctx)
 
 
     # Visit a parse tree produced by STQLParser#opUntilTauExpr.
