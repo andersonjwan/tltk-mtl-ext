@@ -6,7 +6,7 @@ from STQLLexer import STQLLexer as Lexer
 from STQLParser import STQLParser as Parser
 from STQLVisitor import STQLVisitor as Visitor
 
-def testOrRule():
+def testFinallyRule():
 	preds = {}
 	preds['pred1'] = MTL.Predicate('pred1', 1, 2)
 	preds['pred2'] = MTL.Predicate('pred2', 2, 4)
@@ -24,9 +24,9 @@ def testOrRule():
 	printPass(5)
 
 def printPass(test_num):
-    print('[Or Rule Test] Assertion No. %02d PASSED.' % (test_num))
+    print('[Finally Rule Test] Assertion No. %02d PASSED.' % (test_num))
 
 def printFail(test_num):
-    return '[Or Rule Test] Assertion No. %02d FAILED' % (test_num)
+    return '[Finally Rule Test] Assertion No. %02d FAILED' % (test_num)
 
-testOrRule()
+testFinallyRule()
