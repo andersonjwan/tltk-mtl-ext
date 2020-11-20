@@ -1,10 +1,5 @@
 import tltk_mtl as MTL
 import tltk_mtl_ext as MTLE
-import antlr4
-
-from STQLLexer import STQLLexer as Lexer
-from STQLParser import STQLParser as Parser
-from STQLVisitor import STQLVisitor as Visitor
 
 def testFinallyRule():
 	preds = {}
