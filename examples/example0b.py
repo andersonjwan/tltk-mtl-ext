@@ -11,8 +11,7 @@ predicates['pred1'] = na1
 predicates['pred2'] = na2
 predicates['pred3'] = na3
 
-# MTL PREDICATE FINAL
-phi  = MTLE.parse_mtl('G_ts:(1, 5) pred1 || pred2 U_ts:(5, 10) pred3', predicates)
+phi  = MTLE.parse_mtl('(pred1 || pred2) || pred3', predicates)
 
 traces = {}
 traces['pred1'] = np.array([1,2,2,5,3], dtype=np.float64) # traces has to be 64
