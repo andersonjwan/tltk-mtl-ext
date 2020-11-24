@@ -11,11 +11,11 @@ preds = {}
 
 Ar1 = -1
 br1 = -160
-preds['data1'] = MTL.Predicate('data1', Ar1, br1)
+preds['data1'] = MTL.Predicate('data1', Ar1, br1, mode)
 
 Ar2 = -1
 br2 = -4500
-preds['data2'] = MTL.Predicate('data2', Ar2, br2)
+preds['data2'] = MTL.Predicate('data2', Ar2, br2, mode)
 
 # root = F(data1 /\ data2)
 root = MTLE.parse_mtl('!(F_ts:(0, inf)(data1 && data2))', preds, mode)

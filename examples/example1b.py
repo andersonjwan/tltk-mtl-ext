@@ -13,7 +13,7 @@ preds = {}
 preds['speed'] = MTL.Predicate('speed', Ar3, br3)
 preds['rpm']   = MTL.Predicate('rpm', Ar4, br4)
 
-root = MTLE.parse_mtl('!(F_ts:(0, 100) (speed && rpm))', preds, 'cpu_threaded')
+root = MTLE.parse_mtl('!(F_ts:(0, 100) (speed && rpm))', preds)
 
 traces = {}
 traces['speed'] = np.array([10,20,30,40,50], dtype=np.float64)

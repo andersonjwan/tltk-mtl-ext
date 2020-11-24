@@ -8,14 +8,14 @@ mode = 'cpu_threaded'
 
 Ar1 = -1
 br1 = -160
-r1 = MTL.Predicate('data1', Ar1, br1)
+r1 = MTL.Predicate('data1', Ar1, br1, mode)
 
 Ar2 = -1
 br2 = -4500
-r2 = MTL.Predicate('data2', Ar2, br2)
+r2 = MTL.Predicate('data2', Ar2, br2, mode)
 
-# root = F(r1 /\ r2)
-root = MTL.Not(MTL.Finally(0, float('inf'), MTL.And(r1, r2)))
+# root = F(data1 /\ data2)
+root = MTL.Not(MTL.Finally(0, float('inf'), MTL.And(r1, r2), mode), mode)
 
 traces = {}
 traces['data1'] = np.ones(10, dtype=np.float32) * 5
