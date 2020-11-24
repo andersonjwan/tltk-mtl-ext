@@ -9,7 +9,7 @@ def testGloballyRule():
 	
 	assert isinstance(MTLE.parse_mtl('[]_ts:(1, inf) pred1', preds), MTL.Global), printFail(1)
 	printPass(1)
-	assert isinstance(MTLE.parse_mtl('[]_ts:(1, 100) G_ts:(1, 100) (pred1 && pred2)', preds), MTL.Global), printFail(2)
+	assert isinstance(MTLE.parse_mtl('[]_ts:(1, 100) G_ts:(1, 100) globally_ts:(1, 100) (pred1 && pred2)', preds), MTL.Global), printFail(2)
 	printPass(2)
 	assert isinstance(MTLE.parse_mtl('[]_ts:(1, 100) []_ts:(5, 50) G_ts:(25, 35) []_ts:(27, 30) pred1', preds), MTL.Global), printFail(3)
 	printPass(3)
@@ -19,9 +19,9 @@ def testGloballyRule():
 	printPass(5)
 
 def printPass(test_num):
-    print('[Globally Rule Test] Assertion No. %02d PASSED.' % (test_num))
+    print("%-20s Assertion No. %02d PASSED." % ('[Globally Rule Test]', test_num))
 
 def printFail(test_num):
-    return '[Globally Rule Test] Assertion No. %02d FAILED' % (test_num)
+    return '%-20s Assertion No. %02d FAILED' % ('[Globally Rule Test]', test_num)
 
 testGloballyRule()

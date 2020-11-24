@@ -9,7 +9,7 @@ def testFinallyRule():
 	
 	assert isinstance(MTLE.parse_mtl('<>_ts:(1, inf) pred1', preds), MTL.Finally), printFail(1)
 	printPass(1)
-	assert isinstance(MTLE.parse_mtl('<>_ts:(1, 100) (pred1 && pred2)', preds), MTL.Finally), printFail(2)
+	assert isinstance(MTLE.parse_mtl('<>_ts:(1, 100) (finally_ts:(1.0, 200) (pred1 && pred2))', preds), MTL.Finally), printFail(2)
 	printPass(2)
 	assert isinstance(MTLE.parse_mtl('<>_ts:(1, 100) <>_ts:(5, 50) F_ts:(25, 35) <>_ts:(27, 30) pred1', preds), MTL.Finally), printFail(3)
 	printPass(3)
@@ -19,9 +19,9 @@ def testFinallyRule():
 	printPass(5)
 
 def printPass(test_num):
-    print('[Finally Rule Test] Assertion No. %02d PASSED.' % (test_num))
+    print("%-20s Assertion No. %02d PASSED." % ('[Finally Rule Test]', test_num))
 
 def printFail(test_num):
-    return '[Finally Rule Test] Assertion No. %02d FAILED' % (test_num)
+    return '%-20s Assertion No. %02d FAILED' % ('[Finally Rule Test]', test_num)
 
 testFinallyRule()

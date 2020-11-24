@@ -19,9 +19,9 @@ def testOrRule():
 	printPass(5)
 
 def printPass(test_num):
-    print('[Or Rule Test] Assertion No. %02d PASSED.' % (test_num))
+    print("%-20s Assertion No. %02d PASSED." % ('[Or Rule Test]', test_num))
 
 def printFail(test_num):
-    return '[Or Rule Test] Assertion No. %02d FAILED' % (test_num)
+    return '%-20s Assertion No. %02d FAILED' % ('[Or Rule Test]', test_num)
 
 testOrRule()

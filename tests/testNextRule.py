@@ -19,9 +19,9 @@ def testNextRule():
 	printPass(5)
 
 def printPass(test_num):
-    print('[Next Rule Test] Assertion No. %02d PASSED.' % (test_num))
+    print("%-20s Assertion No. %02d PASSED." % ('[Next Rule Test]', test_num))
 
 def printFail(test_num):
-    return '[Next Rule Test] Assertion No. %02d FAILED' % (test_num)
+    return '%-20s Assertion No. %02d FAILED' % ('[Next Rule Test]', test_num)
 
 testNextRule()

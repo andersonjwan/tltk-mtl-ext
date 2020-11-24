@@ -19,9 +19,9 @@ def testAndRule():
 	printPass(5)
 
 def printPass(test_num):
-    print('[And Rule Test] Assertion No. %02d PASSED.' % (test_num))
+    print("%-20s Assertion No. %02d PASSED." % ('[And Rule Test]', test_num))
 
 def printFail(test_num):
-    return '[And Rule Test] Assertion No. %02d FAILED' % (test_num)
+    return '%-20s Assertion No. %02d FAILED' % ('[And Rule Test]', test_num)
 
 testAndRule()
