@@ -13,7 +13,6 @@ predicates['pred1'] = na1
 predicates['pred2'] = na2
 predicates['pred3'] = na3
 
-# MTL PREDICATE FINAL
 phi  = MTLE.parse_mtl('G_ts:(0, inf) (pred0) && G_ts:(0, inf)((pred1 && (X pred2)) -> (X (pred3))) && F_ts:(0, 7) (pred1 && X pred2)', predicates)
 
 traces = {}
@@ -21,10 +20,8 @@ traces['pred0'] = np.array([1,2,2,5,3], dtype=np.float64) # traces has to be 64
 traces['pred1'] = np.array([1,2,2,5,3], dtype=np.float64) # traces has to be 64
 traces['pred2'] = np.array([1,2,2,5,3], dtype=np.float64) # traces has to be 64
 traces['pred3'] = np.array([1,2,2,5,3], dtype=np.float64) # traces has to be 64
-#print(traces['pred'].shape)
 
 time_data = np.arange(1, 2, 0.2, dtype=np.float32)
-#print(time_data.shape)
 
 phi.eval_interval(traces, time_data)
 print(phi.robustness)
