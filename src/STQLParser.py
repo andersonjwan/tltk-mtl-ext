@@ -11,8 +11,8 @@ else:
 
 def serializedATN():
     with StringIO() as buf:
-        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\61")
-        buf.write("\u0179\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
+        buf.write("\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3/")
+        buf.write("\u0171\4\2\t\2\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7")
         buf.write("\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4\f\t\f\4\r\t\r\4\16")
         buf.write("\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22\4\23\t\23")
         buf.write("\4\24\t\24\4\25\t\25\4\26\t\26\4\27\t\27\3\2\3\2\3\2\3")
@@ -35,153 +35,148 @@ def serializedATN():
         buf.write("\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\3\6\5\6\u00fd\n\6\3\7\3")
         buf.write("\7\3\7\3\7\3\7\3\7\3\7\3\7\5\7\u0107\n\7\3\7\3\7\3\b\3")
         buf.write("\b\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3\n\5\n\u0115\n\n\3\13")
-        buf.write("\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13")
-        buf.write("\5\13\u0123\n\13\3\f\3\f\3\f\3\f\3\f\3\r\3\r\3\r\3\r\3")
-        buf.write("\r\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\17\3\17\3\17\3")
-        buf.write("\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\20\3\20\3\20")
-        buf.write("\3\20\3\20\3\20\3\20\3\21\3\21\3\21\3\21\3\21\3\21\3\21")
-        buf.write("\3\22\3\22\3\22\3\22\5\22\u0153\n\22\3\22\3\22\3\22\5")
-        buf.write("\22\u0158\n\22\3\22\3\22\3\23\3\23\3\23\3\23\3\23\3\24")
-        buf.write("\3\24\3\24\3\24\3\24\3\24\3\24\3\25\3\25\3\25\3\25\3\25")
-        buf.write("\3\26\3\26\3\26\3\26\3\26\3\27\3\27\3\27\3\27\3\27\3\27")
-        buf.write("\3\27\3\27\2\4\4\6\30\2\4\6\b\n\f\16\20\22\24\26\30\32")
-        buf.write("\34\36 \"$&(*,\2\b\3\2,-\3\2 !\4\2\24\24..\4\2\16\16\20")
-        buf.write("\20\4\2\3\3,-\4\2\17\17\21\21\2\u01a1\2.\3\2\2\2\4]\3")
-        buf.write("\2\2\2\6\u00b8\3\2\2\2\b\u00ce\3\2\2\2\n\u00fc\3\2\2\2")
-        buf.write("\f\u00fe\3\2\2\2\16\u010a\3\2\2\2\20\u010c\3\2\2\2\22")
-        buf.write("\u0114\3\2\2\2\24\u0122\3\2\2\2\26\u0124\3\2\2\2\30\u0129")
-        buf.write("\3\2\2\2\32\u012e\3\2\2\2\34\u0135\3\2\2\2\36\u0140\3")
-        buf.write("\2\2\2 \u0147\3\2\2\2\"\u014e\3\2\2\2$\u015b\3\2\2\2&")
-        buf.write("\u0160\3\2\2\2(\u0167\3\2\2\2*\u016c\3\2\2\2,\u0171\3")
-        buf.write("\2\2\2./\5\4\3\2/\60\7\2\2\3\60\3\3\2\2\2\61\62\b\3\1")
-        buf.write("\2\62\63\7\16\2\2\63\64\5\4\3\2\64\65\7\17\2\2\65^\3\2")
-        buf.write("\2\2\66^\7+\2\2\678\7\25\2\28^\5\4\3\249;\7\31\2\2:<\5")
-        buf.write("\24\13\2;:\3\2\2\2;<\3\2\2\2<=\3\2\2\2=^\5\4\3\23>@\7")
-        buf.write("\32\2\2?A\5\24\13\2@?\3\2\2\2@A\3\2\2\2AB\3\2\2\2B^\5")
-        buf.write("\4\3\22CE\7\33\2\2DF\5\24\13\2ED\3\2\2\2EF\3\2\2\2FG\3")
-        buf.write("\2\2\2G^\5\4\3\21HI\7(\2\2IJ\7\26\2\2JK\7.\2\2KL\7\27")
-        buf.write("\2\2L^\t\2\2\2MN\7)\2\2NO\7\26\2\2OP\7.\2\2PQ\7\27\2\2")
-        buf.write("Q^\7-\2\2RS\7.\2\2ST\7\30\2\2T^\7.\2\2UV\5\f\7\2VW\5\4")
-        buf.write("\3\7W^\3\2\2\2XY\7#\2\2Y^\5\6\4\2Z^\5\b\5\2[^\5\n\6\2")
-        buf.write("\\^\7\61\2\2]\61\3\2\2\2]\66\3\2\2\2]\67\3\2\2\2]9\3\2")
-        buf.write("\2\2]>\3\2\2\2]C\3\2\2\2]H\3\2\2\2]M\3\2\2\2]R\3\2\2\2")
-        buf.write("]U\3\2\2\2]X\3\2\2\2]Z\3\2\2\2][\3\2\2\2]\\\3\2\2\2^\177")
-        buf.write("\3\2\2\2_`\f\20\2\2`b\7\34\2\2ac\5\24\13\2ba\3\2\2\2b")
-        buf.write("c\3\2\2\2cd\3\2\2\2d~\5\4\3\21ef\f\17\2\2fh\7\35\2\2g")
-        buf.write("i\5\24\13\2hg\3\2\2\2hi\3\2\2\2ij\3\2\2\2j~\5\4\3\20k")
-        buf.write("l\f\16\2\2ln\7\36\2\2mo\5\24\13\2nm\3\2\2\2no\3\2\2\2")
-        buf.write("op\3\2\2\2p~\5\4\3\17qr\f\r\2\2rt\7\37\2\2su\5\24\13\2")
-        buf.write("ts\3\2\2\2tu\3\2\2\2uv\3\2\2\2v~\5\4\3\16wx\f\f\2\2xy")
-        buf.write("\t\3\2\2y~\5\4\3\rz{\f\13\2\2{|\7$\2\2|~\5\4\3\f}_\3\2")
-        buf.write("\2\2}e\3\2\2\2}k\3\2\2\2}q\3\2\2\2}w\3\2\2\2}z\3\2\2\2")
-        buf.write("~\u0081\3\2\2\2\177}\3\2\2\2\177\u0080\3\2\2\2\u0080\5")
-        buf.write("\3\2\2\2\u0081\177\3\2\2\2\u0082\u0083\b\4\1\2\u0083\u0084")
-        buf.write("\7\16\2\2\u0084\u0085\5\6\4\2\u0085\u0086\7\17\2\2\u0086")
-        buf.write("\u00b9\3\2\2\2\u0087\u00b9\7\r\2\2\u0088\u00b9\5\26\f")
-        buf.write("\2\u0089\u008a\7\25\2\2\u008a\u00b9\5\6\4\f\u008b\u008c")
-        buf.write("\7\'\2\2\u008c\u00b9\5\6\4\n\u008d\u008f\7\31\2\2\u008e")
-        buf.write("\u0090\5\24\13\2\u008f\u008e\3\2\2\2\u008f\u0090\3\2\2")
-        buf.write("\2\u0090\u0091\3\2\2\2\u0091\u00b9\5\6\4\t\u0092\u0094")
-        buf.write("\7\32\2\2\u0093\u0095\5\24\13\2\u0094\u0093\3\2\2\2\u0094")
-        buf.write("\u0095\3\2\2\2\u0095\u0096\3\2\2\2\u0096\u00b9\5\6\4\b")
-        buf.write("\u0097\u0099\7\33\2\2\u0098\u009a\5\24\13\2\u0099\u0098")
-        buf.write("\3\2\2\2\u0099\u009a\3\2\2\2\u009a\u009b\3\2\2\2\u009b")
-        buf.write("\u00b9\5\6\4\7\u009c\u009d\5\4\3\2\u009d\u009f\7\34\2")
-        buf.write("\2\u009e\u00a0\5\24\13\2\u009f\u009e\3\2\2\2\u009f\u00a0")
-        buf.write("\3\2\2\2\u00a0\u00a1\3\2\2\2\u00a1\u00a2\5\6\4\6\u00a2")
-        buf.write("\u00b9\3\2\2\2\u00a3\u00a4\5\4\3\2\u00a4\u00a6\7\35\2")
-        buf.write("\2\u00a5\u00a7\5\24\13\2\u00a6\u00a5\3\2\2\2\u00a6\u00a7")
-        buf.write("\3\2\2\2\u00a7\u00a8\3\2\2\2\u00a8\u00a9\5\6\4\5\u00a9")
-        buf.write("\u00b9\3\2\2\2\u00aa\u00ab\5\4\3\2\u00ab\u00ad\7\36\2")
-        buf.write("\2\u00ac\u00ae\5\24\13\2\u00ad\u00ac\3\2\2\2\u00ad\u00ae")
-        buf.write("\3\2\2\2\u00ae\u00af\3\2\2\2\u00af\u00b0\5\6\4\4\u00b0")
-        buf.write("\u00b9\3\2\2\2\u00b1\u00b2\5\4\3\2\u00b2\u00b4\7\37\2")
-        buf.write("\2\u00b3\u00b5\5\24\13\2\u00b4\u00b3\3\2\2\2\u00b4\u00b5")
-        buf.write("\3\2\2\2\u00b5\u00b6\3\2\2\2\u00b6\u00b7\5\6\4\3\u00b7")
-        buf.write("\u00b9\3\2\2\2\u00b8\u0082\3\2\2\2\u00b8\u0087\3\2\2\2")
-        buf.write("\u00b8\u0088\3\2\2\2\u00b8\u0089\3\2\2\2\u00b8\u008b\3")
-        buf.write("\2\2\2\u00b8\u008d\3\2\2\2\u00b8\u0092\3\2\2\2\u00b8\u0097")
-        buf.write("\3\2\2\2\u00b8\u009c\3\2\2\2\u00b8\u00a3\3\2\2\2\u00b8")
-        buf.write("\u00aa\3\2\2\2\u00b8\u00b1\3\2\2\2\u00b9\u00bf\3\2\2\2")
-        buf.write("\u00ba\u00bb\f\13\2\2\u00bb\u00bc\t\3\2\2\u00bc\u00be")
-        buf.write("\5\6\4\f\u00bd\u00ba\3\2\2\2\u00be\u00c1\3\2\2\2\u00bf")
-        buf.write("\u00bd\3\2\2\2\u00bf\u00c0\3\2\2\2\u00c0\7\3\2\2\2\u00c1")
-        buf.write("\u00bf\3\2\2\2\u00c2\u00c3\7\16\2\2\u00c3\u00c4\5\b\5")
-        buf.write("\2\u00c4\u00c5\7\17\2\2\u00c5\u00cf\3\2\2\2\u00c6\u00c7")
-        buf.write("\5\30\r\2\u00c7\u00c8\7\27\2\2\u00c8\u00c9\7,\2\2\u00c9")
-        buf.write("\u00cf\3\2\2\2\u00ca\u00cb\5\32\16\2\u00cb\u00cc\7\27")
-        buf.write("\2\2\u00cc\u00cd\7,\2\2\u00cd\u00cf\3\2\2\2\u00ce\u00c2")
-        buf.write("\3\2\2\2\u00ce\u00c6\3\2\2\2\u00ce\u00ca\3\2\2\2\u00cf")
-        buf.write("\t\3\2\2\2\u00d0\u00d1\7\16\2\2\u00d1\u00d2\5\n\6\2\u00d2")
-        buf.write("\u00d3\7\17\2\2\u00d3\u00fd\3\2\2\2\u00d4\u00d5\5\34\17")
-        buf.write("\2\u00d5\u00d6\7\27\2\2\u00d6\u00d7\7,\2\2\u00d7\u00fd")
-        buf.write("\3\2\2\2\u00d8\u00d9\5\36\20\2\u00d9\u00da\7\27\2\2\u00da")
-        buf.write("\u00db\7,\2\2\u00db\u00fd\3\2\2\2\u00dc\u00dd\5 \21\2")
-        buf.write("\u00dd\u00de\7\27\2\2\u00de\u00df\7,\2\2\u00df\u00fd\3")
-        buf.write("\2\2\2\u00e0\u00e1\5\"\22\2\u00e1\u00e2\7\27\2\2\u00e2")
-        buf.write("\u00e3\7,\2\2\u00e3\u00fd\3\2\2\2\u00e4\u00e5\5$\23\2")
-        buf.write("\u00e5\u00e6\7\27\2\2\u00e6\u00e7\7,\2\2\u00e7\u00fd\3")
-        buf.write("\2\2\2\u00e8\u00e9\5&\24\2\u00e9\u00ea\7\27\2\2\u00ea")
-        buf.write("\u00eb\7,\2\2\u00eb\u00fd\3\2\2\2\u00ec\u00ed\5(\25\2")
-        buf.write("\u00ed\u00ee\7\27\2\2\u00ee\u00ef\7-\2\2\u00ef\u00fd\3")
-        buf.write("\2\2\2\u00f0\u00f1\5(\25\2\u00f1\u00f2\7\30\2\2\u00f2")
-        buf.write("\u00f3\5(\25\2\u00f3\u00fd\3\2\2\2\u00f4\u00f5\5*\26\2")
-        buf.write("\u00f5\u00f6\7\27\2\2\u00f6\u00f7\7,\2\2\u00f7\u00fd\3")
-        buf.write("\2\2\2\u00f8\u00f9\5,\27\2\u00f9\u00fa\7\27\2\2\u00fa")
-        buf.write("\u00fb\7,\2\2\u00fb\u00fd\3\2\2\2\u00fc\u00d0\3\2\2\2")
-        buf.write("\u00fc\u00d4\3\2\2\2\u00fc\u00d8\3\2\2\2\u00fc\u00dc\3")
-        buf.write("\2\2\2\u00fc\u00e0\3\2\2\2\u00fc\u00e4\3\2\2\2\u00fc\u00e8")
-        buf.write("\3\2\2\2\u00fc\u00ec\3\2\2\2\u00fc\u00f0\3\2\2\2\u00fc")
-        buf.write("\u00f4\3\2\2\2\u00fc\u00f8\3\2\2\2\u00fd\13\3\2\2\2\u00fe")
-        buf.write("\u00ff\7\22\2\2\u00ff\u0106\7\16\2\2\u0100\u0107\5\16")
-        buf.write("\b\2\u0101\u0107\5\20\t\2\u0102\u0103\5\16\b\2\u0103\u0104")
-        buf.write("\7\23\2\2\u0104\u0105\5\20\t\2\u0105\u0107\3\2\2\2\u0106")
-        buf.write("\u0100\3\2\2\2\u0106\u0101\3\2\2\2\u0106\u0102\3\2\2\2")
-        buf.write("\u0107\u0108\3\2\2\2\u0108\u0109\7\17\2\2\u0109\r\3\2")
-        buf.write("\2\2\u010a\u010b\t\4\2\2\u010b\17\3\2\2\2\u010c\u010d")
-        buf.write("\7\"\2\2\u010d\u010e\7\23\2\2\u010e\u010f\5\22\n\2\u010f")
-        buf.write("\21\3\2\2\2\u0110\u0115\7.\2\2\u0111\u0112\7.\2\2\u0112")
-        buf.write("\u0113\7\23\2\2\u0113\u0115\5\22\n\2\u0114\u0110\3\2\2")
-        buf.write("\2\u0114\u0111\3\2\2\2\u0115\23\3\2\2\2\u0116\u0117\7")
-        buf.write("/\2\2\u0117\u0118\t\5\2\2\u0118\u0119\t\6\2\2\u0119\u011a")
-        buf.write("\7\23\2\2\u011a\u011b\t\6\2\2\u011b\u0123\t\7\2\2\u011c")
-        buf.write("\u011d\7\60\2\2\u011d\u011e\t\5\2\2\u011e\u011f\7-\2\2")
-        buf.write("\u011f\u0120\7\23\2\2\u0120\u0121\7-\2\2\u0121\u0123\t")
-        buf.write("\7\2\2\u0122\u0116\3\2\2\2\u0122\u011c\3\2\2\2\u0123\25")
-        buf.write("\3\2\2\2\u0124\u0125\7\4\2\2\u0125\u0126\7\16\2\2\u0126")
-        buf.write("\u0127\7.\2\2\u0127\u0128\7\17\2\2\u0128\27\3\2\2\2\u0129")
-        buf.write("\u012a\7\5\2\2\u012a\u012b\7\16\2\2\u012b\u012c\5\6\4")
-        buf.write("\2\u012c\u012d\7\17\2\2\u012d\31\3\2\2\2\u012e\u012f\7")
-        buf.write("\6\2\2\u012f\u0130\7\16\2\2\u0130\u0131\5\30\r\2\u0131")
-        buf.write("\u0132\7\23\2\2\u0132\u0133\5\30\r\2\u0133\u0134\7\17")
-        buf.write("\2\2\u0134\33\3\2\2\2\u0135\u0136\7\7\2\2\u0136\u0137")
-        buf.write("\7\16\2\2\u0137\u0138\7.\2\2\u0138\u0139\7\23\2\2\u0139")
-        buf.write("\u013a\7*\2\2\u013a\u013b\7\23\2\2\u013b\u013c\7.\2\2")
-        buf.write("\u013c\u013d\7\23\2\2\u013d\u013e\7*\2\2\u013e\u013f\7")
-        buf.write("\17\2\2\u013f\35\3\2\2\2\u0140\u0141\7\b\2\2\u0141\u0142")
-        buf.write("\7\16\2\2\u0142\u0143\7.\2\2\u0143\u0144\7\23\2\2\u0144")
-        buf.write("\u0145\7*\2\2\u0145\u0146\7\17\2\2\u0146\37\3\2\2\2\u0147")
-        buf.write("\u0148\7\t\2\2\u0148\u0149\7\16\2\2\u0149\u014a\7.\2\2")
-        buf.write("\u014a\u014b\7\23\2\2\u014b\u014c\7*\2\2\u014c\u014d\7")
-        buf.write("\17\2\2\u014d!\3\2\2\2\u014e\u014f\7\6\2\2\u014f\u0152")
-        buf.write("\7\16\2\2\u0150\u0153\5\36\20\2\u0151\u0153\5 \21\2\u0152")
-        buf.write("\u0150\3\2\2\2\u0152\u0151\3\2\2\2\u0153\u0154\3\2\2\2")
-        buf.write("\u0154\u0157\7\23\2\2\u0155\u0158\5\36\20\2\u0156\u0158")
-        buf.write("\5 \21\2\u0157\u0155\3\2\2\2\u0157\u0156\3\2\2\2\u0158")
-        buf.write("\u0159\3\2\2\2\u0159\u015a\7\17\2\2\u015a#\3\2\2\2\u015b")
-        buf.write("\u015c\7\5\2\2\u015c\u015d\7\16\2\2\u015d\u015e\7.\2\2")
-        buf.write("\u015e\u015f\7\17\2\2\u015f%\3\2\2\2\u0160\u0161\7\6\2")
-        buf.write("\2\u0161\u0162\7\16\2\2\u0162\u0163\5\30\r\2\u0163\u0164")
-        buf.write("\7\23\2\2\u0164\u0165\5\30\r\2\u0165\u0166\7\17\2\2\u0166")
-        buf.write("\'\3\2\2\2\u0167\u0168\7\n\2\2\u0168\u0169\7\16\2\2\u0169")
-        buf.write("\u016a\7.\2\2\u016a\u016b\7\17\2\2\u016b)\3\2\2\2\u016c")
-        buf.write("\u016d\7\13\2\2\u016d\u016e\7\16\2\2\u016e\u016f\7.\2")
-        buf.write("\2\u016f\u0170\7\17\2\2\u0170+\3\2\2\2\u0171\u0172\7\6")
-        buf.write("\2\2\u0172\u0173\7\16\2\2\u0173\u0174\5*\26\2\u0174\u0175")
-        buf.write("\7\23\2\2\u0175\u0176\5*\26\2\u0176\u0177\7\17\2\2\u0177")
-        buf.write("-\3\2\2\2\34;@E]bhnt}\177\u008f\u0094\u0099\u009f\u00a6")
-        buf.write("\u00ad\u00b4\u00b8\u00bf\u00ce\u00fc\u0106\u0114\u0122")
-        buf.write("\u0152\u0157")
+        buf.write("\3\13\3\13\3\13\3\13\3\13\3\f\3\f\3\f\3\f\3\f\3\r\3\r")
+        buf.write("\3\r\3\r\3\r\3\16\3\16\3\16\3\16\3\16\3\16\3\16\3\17\3")
+        buf.write("\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\17\3\20")
+        buf.write("\3\20\3\20\3\20\3\20\3\20\3\20\3\21\3\21\3\21\3\21\3\21")
+        buf.write("\3\21\3\21\3\22\3\22\3\22\3\22\5\22\u014b\n\22\3\22\3")
+        buf.write("\22\3\22\5\22\u0150\n\22\3\22\3\22\3\23\3\23\3\23\3\23")
+        buf.write("\3\23\3\24\3\24\3\24\3\24\3\24\3\24\3\24\3\25\3\25\3\25")
+        buf.write("\3\25\3\25\3\26\3\26\3\26\3\26\3\26\3\27\3\27\3\27\3\27")
+        buf.write("\3\27\3\27\3\27\3\27\2\4\4\6\30\2\4\6\b\n\f\16\20\22\24")
+        buf.write("\26\30\32\34\36 \"$&(*,\2\b\3\2,-\3\2\37 \4\2\23\23..")
+        buf.write("\4\2\r\r\17\17\3\2+-\4\2\16\16\20\20\2\u0198\2.\3\2\2")
+        buf.write("\2\4]\3\2\2\2\6\u00b8\3\2\2\2\b\u00ce\3\2\2\2\n\u00fc")
+        buf.write("\3\2\2\2\f\u00fe\3\2\2\2\16\u010a\3\2\2\2\20\u010c\3\2")
+        buf.write("\2\2\22\u0114\3\2\2\2\24\u0116\3\2\2\2\26\u011c\3\2\2")
+        buf.write("\2\30\u0121\3\2\2\2\32\u0126\3\2\2\2\34\u012d\3\2\2\2")
+        buf.write("\36\u0138\3\2\2\2 \u013f\3\2\2\2\"\u0146\3\2\2\2$\u0153")
+        buf.write("\3\2\2\2&\u0158\3\2\2\2(\u015f\3\2\2\2*\u0164\3\2\2\2")
+        buf.write(",\u0169\3\2\2\2./\5\4\3\2/\60\7\2\2\3\60\3\3\2\2\2\61")
+        buf.write("\62\b\3\1\2\62\63\7\r\2\2\63\64\5\4\3\2\64\65\7\16\2\2")
+        buf.write("\65^\3\2\2\2\66^\7*\2\2\678\7\24\2\28^\5\4\3\249;\7\30")
+        buf.write("\2\2:<\5\24\13\2;:\3\2\2\2;<\3\2\2\2<=\3\2\2\2=^\5\4\3")
+        buf.write("\23>@\7\31\2\2?A\5\24\13\2@?\3\2\2\2@A\3\2\2\2AB\3\2\2")
+        buf.write("\2B^\5\4\3\22CE\7\32\2\2DF\5\24\13\2ED\3\2\2\2EF\3\2\2")
+        buf.write("\2FG\3\2\2\2G^\5\4\3\21HI\7\'\2\2IJ\7\25\2\2JK\7.\2\2")
+        buf.write("KL\7\26\2\2L^\t\2\2\2MN\7(\2\2NO\7\25\2\2OP\7.\2\2PQ\7")
+        buf.write("\26\2\2Q^\7-\2\2RS\7.\2\2ST\7\27\2\2T^\7.\2\2UV\5\f\7")
+        buf.write("\2VW\5\4\3\7W^\3\2\2\2XY\7\"\2\2Y^\5\6\4\2Z^\5\b\5\2[")
+        buf.write("^\5\n\6\2\\^\7/\2\2]\61\3\2\2\2]\66\3\2\2\2]\67\3\2\2")
+        buf.write("\2]9\3\2\2\2]>\3\2\2\2]C\3\2\2\2]H\3\2\2\2]M\3\2\2\2]")
+        buf.write("R\3\2\2\2]U\3\2\2\2]X\3\2\2\2]Z\3\2\2\2][\3\2\2\2]\\\3")
+        buf.write("\2\2\2^\177\3\2\2\2_`\f\20\2\2`b\7\33\2\2ac\5\24\13\2")
+        buf.write("ba\3\2\2\2bc\3\2\2\2cd\3\2\2\2d~\5\4\3\21ef\f\17\2\2f")
+        buf.write("h\7\34\2\2gi\5\24\13\2hg\3\2\2\2hi\3\2\2\2ij\3\2\2\2j")
+        buf.write("~\5\4\3\20kl\f\16\2\2ln\7\35\2\2mo\5\24\13\2nm\3\2\2\2")
+        buf.write("no\3\2\2\2op\3\2\2\2p~\5\4\3\17qr\f\r\2\2rt\7\36\2\2s")
+        buf.write("u\5\24\13\2ts\3\2\2\2tu\3\2\2\2uv\3\2\2\2v~\5\4\3\16w")
+        buf.write("x\f\f\2\2xy\t\3\2\2y~\5\4\3\rz{\f\13\2\2{|\7#\2\2|~\5")
+        buf.write("\4\3\f}_\3\2\2\2}e\3\2\2\2}k\3\2\2\2}q\3\2\2\2}w\3\2\2")
+        buf.write("\2}z\3\2\2\2~\u0081\3\2\2\2\177}\3\2\2\2\177\u0080\3\2")
+        buf.write("\2\2\u0080\5\3\2\2\2\u0081\177\3\2\2\2\u0082\u0083\b\4")
+        buf.write("\1\2\u0083\u0084\7\r\2\2\u0084\u0085\5\6\4\2\u0085\u0086")
+        buf.write("\7\16\2\2\u0086\u00b9\3\2\2\2\u0087\u00b9\7\f\2\2\u0088")
+        buf.write("\u00b9\5\26\f\2\u0089\u008a\7\24\2\2\u008a\u00b9\5\6\4")
+        buf.write("\f\u008b\u008c\7&\2\2\u008c\u00b9\5\6\4\n\u008d\u008f")
+        buf.write("\7\30\2\2\u008e\u0090\5\24\13\2\u008f\u008e\3\2\2\2\u008f")
+        buf.write("\u0090\3\2\2\2\u0090\u0091\3\2\2\2\u0091\u00b9\5\6\4\t")
+        buf.write("\u0092\u0094\7\31\2\2\u0093\u0095\5\24\13\2\u0094\u0093")
+        buf.write("\3\2\2\2\u0094\u0095\3\2\2\2\u0095\u0096\3\2\2\2\u0096")
+        buf.write("\u00b9\5\6\4\b\u0097\u0099\7\32\2\2\u0098\u009a\5\24\13")
+        buf.write("\2\u0099\u0098\3\2\2\2\u0099\u009a\3\2\2\2\u009a\u009b")
+        buf.write("\3\2\2\2\u009b\u00b9\5\6\4\7\u009c\u009d\5\4\3\2\u009d")
+        buf.write("\u009f\7\33\2\2\u009e\u00a0\5\24\13\2\u009f\u009e\3\2")
+        buf.write("\2\2\u009f\u00a0\3\2\2\2\u00a0\u00a1\3\2\2\2\u00a1\u00a2")
+        buf.write("\5\6\4\6\u00a2\u00b9\3\2\2\2\u00a3\u00a4\5\4\3\2\u00a4")
+        buf.write("\u00a6\7\34\2\2\u00a5\u00a7\5\24\13\2\u00a6\u00a5\3\2")
+        buf.write("\2\2\u00a6\u00a7\3\2\2\2\u00a7\u00a8\3\2\2\2\u00a8\u00a9")
+        buf.write("\5\6\4\5\u00a9\u00b9\3\2\2\2\u00aa\u00ab\5\4\3\2\u00ab")
+        buf.write("\u00ad\7\35\2\2\u00ac\u00ae\5\24\13\2\u00ad\u00ac\3\2")
+        buf.write("\2\2\u00ad\u00ae\3\2\2\2\u00ae\u00af\3\2\2\2\u00af\u00b0")
+        buf.write("\5\6\4\4\u00b0\u00b9\3\2\2\2\u00b1\u00b2\5\4\3\2\u00b2")
+        buf.write("\u00b4\7\36\2\2\u00b3\u00b5\5\24\13\2\u00b4\u00b3\3\2")
+        buf.write("\2\2\u00b4\u00b5\3\2\2\2\u00b5\u00b6\3\2\2\2\u00b6\u00b7")
+        buf.write("\5\6\4\3\u00b7\u00b9\3\2\2\2\u00b8\u0082\3\2\2\2\u00b8")
+        buf.write("\u0087\3\2\2\2\u00b8\u0088\3\2\2\2\u00b8\u0089\3\2\2\2")
+        buf.write("\u00b8\u008b\3\2\2\2\u00b8\u008d\3\2\2\2\u00b8\u0092\3")
+        buf.write("\2\2\2\u00b8\u0097\3\2\2\2\u00b8\u009c\3\2\2\2\u00b8\u00a3")
+        buf.write("\3\2\2\2\u00b8\u00aa\3\2\2\2\u00b8\u00b1\3\2\2\2\u00b9")
+        buf.write("\u00bf\3\2\2\2\u00ba\u00bb\f\13\2\2\u00bb\u00bc\t\3\2")
+        buf.write("\2\u00bc\u00be\5\6\4\f\u00bd\u00ba\3\2\2\2\u00be\u00c1")
+        buf.write("\3\2\2\2\u00bf\u00bd\3\2\2\2\u00bf\u00c0\3\2\2\2\u00c0")
+        buf.write("\7\3\2\2\2\u00c1\u00bf\3\2\2\2\u00c2\u00c3\7\r\2\2\u00c3")
+        buf.write("\u00c4\5\b\5\2\u00c4\u00c5\7\16\2\2\u00c5\u00cf\3\2\2")
+        buf.write("\2\u00c6\u00c7\5\30\r\2\u00c7\u00c8\7\26\2\2\u00c8\u00c9")
+        buf.write("\7,\2\2\u00c9\u00cf\3\2\2\2\u00ca\u00cb\5\32\16\2\u00cb")
+        buf.write("\u00cc\7\26\2\2\u00cc\u00cd\7,\2\2\u00cd\u00cf\3\2\2\2")
+        buf.write("\u00ce\u00c2\3\2\2\2\u00ce\u00c6\3\2\2\2\u00ce\u00ca\3")
+        buf.write("\2\2\2\u00cf\t\3\2\2\2\u00d0\u00d1\7\r\2\2\u00d1\u00d2")
+        buf.write("\5\n\6\2\u00d2\u00d3\7\16\2\2\u00d3\u00fd\3\2\2\2\u00d4")
+        buf.write("\u00d5\5\34\17\2\u00d5\u00d6\7\26\2\2\u00d6\u00d7\7,\2")
+        buf.write("\2\u00d7\u00fd\3\2\2\2\u00d8\u00d9\5\36\20\2\u00d9\u00da")
+        buf.write("\7\26\2\2\u00da\u00db\7,\2\2\u00db\u00fd\3\2\2\2\u00dc")
+        buf.write("\u00dd\5 \21\2\u00dd\u00de\7\26\2\2\u00de\u00df\7,\2\2")
+        buf.write("\u00df\u00fd\3\2\2\2\u00e0\u00e1\5\"\22\2\u00e1\u00e2")
+        buf.write("\7\26\2\2\u00e2\u00e3\7,\2\2\u00e3\u00fd\3\2\2\2\u00e4")
+        buf.write("\u00e5\5$\23\2\u00e5\u00e6\7\26\2\2\u00e6\u00e7\7,\2\2")
+        buf.write("\u00e7\u00fd\3\2\2\2\u00e8\u00e9\5&\24\2\u00e9\u00ea\7")
+        buf.write("\26\2\2\u00ea\u00eb\7,\2\2\u00eb\u00fd\3\2\2\2\u00ec\u00ed")
+        buf.write("\5(\25\2\u00ed\u00ee\7\26\2\2\u00ee\u00ef\7-\2\2\u00ef")
+        buf.write("\u00fd\3\2\2\2\u00f0\u00f1\5(\25\2\u00f1\u00f2\7\27\2")
+        buf.write("\2\u00f2\u00f3\5(\25\2\u00f3\u00fd\3\2\2\2\u00f4\u00f5")
+        buf.write("\5*\26\2\u00f5\u00f6\7\26\2\2\u00f6\u00f7\7,\2\2\u00f7")
+        buf.write("\u00fd\3\2\2\2\u00f8\u00f9\5,\27\2\u00f9\u00fa\7\26\2")
+        buf.write("\2\u00fa\u00fb\7,\2\2\u00fb\u00fd\3\2\2\2\u00fc\u00d0")
+        buf.write("\3\2\2\2\u00fc\u00d4\3\2\2\2\u00fc\u00d8\3\2\2\2\u00fc")
+        buf.write("\u00dc\3\2\2\2\u00fc\u00e0\3\2\2\2\u00fc\u00e4\3\2\2\2")
+        buf.write("\u00fc\u00e8\3\2\2\2\u00fc\u00ec\3\2\2\2\u00fc\u00f0\3")
+        buf.write("\2\2\2\u00fc\u00f4\3\2\2\2\u00fc\u00f8\3\2\2\2\u00fd\13")
+        buf.write("\3\2\2\2\u00fe\u00ff\7\21\2\2\u00ff\u0106\7\r\2\2\u0100")
+        buf.write("\u0107\5\16\b\2\u0101\u0107\5\20\t\2\u0102\u0103\5\16")
+        buf.write("\b\2\u0103\u0104\7\22\2\2\u0104\u0105\5\20\t\2\u0105\u0107")
+        buf.write("\3\2\2\2\u0106\u0100\3\2\2\2\u0106\u0101\3\2\2\2\u0106")
+        buf.write("\u0102\3\2\2\2\u0107\u0108\3\2\2\2\u0108\u0109\7\16\2")
+        buf.write("\2\u0109\r\3\2\2\2\u010a\u010b\t\4\2\2\u010b\17\3\2\2")
+        buf.write("\2\u010c\u010d\7!\2\2\u010d\u010e\7\22\2\2\u010e\u010f")
+        buf.write("\5\22\n\2\u010f\21\3\2\2\2\u0110\u0115\7.\2\2\u0111\u0112")
+        buf.write("\7.\2\2\u0112\u0113\7\22\2\2\u0113\u0115\5\22\n\2\u0114")
+        buf.write("\u0110\3\2\2\2\u0114\u0111\3\2\2\2\u0115\23\3\2\2\2\u0116")
+        buf.write("\u0117\t\5\2\2\u0117\u0118\t\6\2\2\u0118\u0119\7\22\2")
+        buf.write("\2\u0119\u011a\t\6\2\2\u011a\u011b\t\7\2\2\u011b\25\3")
+        buf.write("\2\2\2\u011c\u011d\7\3\2\2\u011d\u011e\7\r\2\2\u011e\u011f")
+        buf.write("\7.\2\2\u011f\u0120\7\16\2\2\u0120\27\3\2\2\2\u0121\u0122")
+        buf.write("\7\4\2\2\u0122\u0123\7\r\2\2\u0123\u0124\5\6\4\2\u0124")
+        buf.write("\u0125\7\16\2\2\u0125\31\3\2\2\2\u0126\u0127\7\5\2\2\u0127")
+        buf.write("\u0128\7\r\2\2\u0128\u0129\5\30\r\2\u0129\u012a\7\22\2")
+        buf.write("\2\u012a\u012b\5\30\r\2\u012b\u012c\7\16\2\2\u012c\33")
+        buf.write("\3\2\2\2\u012d\u012e\7\6\2\2\u012e\u012f\7\r\2\2\u012f")
+        buf.write("\u0130\7.\2\2\u0130\u0131\7\22\2\2\u0131\u0132\7)\2\2")
+        buf.write("\u0132\u0133\7\22\2\2\u0133\u0134\7.\2\2\u0134\u0135\7")
+        buf.write("\22\2\2\u0135\u0136\7)\2\2\u0136\u0137\7\16\2\2\u0137")
+        buf.write("\35\3\2\2\2\u0138\u0139\7\7\2\2\u0139\u013a\7\r\2\2\u013a")
+        buf.write("\u013b\7.\2\2\u013b\u013c\7\22\2\2\u013c\u013d\7)\2\2")
+        buf.write("\u013d\u013e\7\16\2\2\u013e\37\3\2\2\2\u013f\u0140\7\b")
+        buf.write("\2\2\u0140\u0141\7\r\2\2\u0141\u0142\7.\2\2\u0142\u0143")
+        buf.write("\7\22\2\2\u0143\u0144\7)\2\2\u0144\u0145\7\16\2\2\u0145")
+        buf.write("!\3\2\2\2\u0146\u0147\7\5\2\2\u0147\u014a\7\r\2\2\u0148")
+        buf.write("\u014b\5\36\20\2\u0149\u014b\5 \21\2\u014a\u0148\3\2\2")
+        buf.write("\2\u014a\u0149\3\2\2\2\u014b\u014c\3\2\2\2\u014c\u014f")
+        buf.write("\7\22\2\2\u014d\u0150\5\36\20\2\u014e\u0150\5 \21\2\u014f")
+        buf.write("\u014d\3\2\2\2\u014f\u014e\3\2\2\2\u0150\u0151\3\2\2\2")
+        buf.write("\u0151\u0152\7\16\2\2\u0152#\3\2\2\2\u0153\u0154\7\4\2")
+        buf.write("\2\u0154\u0155\7\r\2\2\u0155\u0156\7.\2\2\u0156\u0157")
+        buf.write("\7\16\2\2\u0157%\3\2\2\2\u0158\u0159\7\5\2\2\u0159\u015a")
+        buf.write("\7\r\2\2\u015a\u015b\5\30\r\2\u015b\u015c\7\22\2\2\u015c")
+        buf.write("\u015d\5\30\r\2\u015d\u015e\7\16\2\2\u015e\'\3\2\2\2\u015f")
+        buf.write("\u0160\7\t\2\2\u0160\u0161\7\r\2\2\u0161\u0162\7.\2\2")
+        buf.write("\u0162\u0163\7\16\2\2\u0163)\3\2\2\2\u0164\u0165\7\n\2")
+        buf.write("\2\u0165\u0166\7\r\2\2\u0166\u0167\7.\2\2\u0167\u0168")
+        buf.write("\7\16\2\2\u0168+\3\2\2\2\u0169\u016a\7\5\2\2\u016a\u016b")
+        buf.write("\7\r\2\2\u016b\u016c\5*\26\2\u016c\u016d\7\22\2\2\u016d")
+        buf.write("\u016e\5*\26\2\u016e\u016f\7\16\2\2\u016f-\3\2\2\2\33")
+        buf.write(";@E]bhnt}\177\u008f\u0094\u0099\u009f\u00a6\u00ad\u00b4")
+        buf.write("\u00b8\u00bf\u00ce\u00fc\u0106\u0114\u014a\u014f")
         return buf.getvalue()
 
 
@@ -195,27 +190,26 @@ class STQLParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ "<INVALID>", "'inf'", "'BB'", "'area'", "'ratio'", 
-                     "'dist'", "'lat_dist'", "'lon_dist'", "'class'", "'prob'", 
-                     "<INVALID>", "<INVALID>", "'('", "')'", "'['", "']'", 
-                     "'@'", "','", "'_'", "<INVALID>", "'-'", "<INVALID>", 
+    literalNames = [ "<INVALID>", "'BB'", "'area'", "'ratio'", "'dist'", 
+                     "'lat_dist'", "'lon_dist'", "'class'", "'prob'", "<INVALID>", 
+                     "<INVALID>", "'('", "')'", "'['", "']'", "'@'", "','", 
+                     "'_'", "<INVALID>", "'-'", "<INVALID>", "<INVALID>", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                     "'C_TIME'", "'C_FRAME'", "<INVALID>", "<INVALID>", 
-                     "<INVALID>", "<INVALID>", "<INVALID>", "'_ts:'", "'_fr:'" ]
+                     "<INVALID>", "<INVALID>", "<INVALID>", "'C_TIME'", 
+                     "'C_FRAME'", "<INVALID>", "<INVALID>", "'inf'" ]
 
     symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
                       "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
-                      "<INVALID>", "<INVALID>", "WS", "SET", "LPAREN", "RPAREN", 
-                      "LBRACK", "RBRACK", "AT", "COMMA", "UNDERSCORE", "NEGATION", 
+                      "<INVALID>", "WS", "SET", "LPAREN", "RPAREN", "LBRACK", 
+                      "RBRACK", "AT", "COMMA", "UNDERSCORE", "NEGATION", 
                       "MINUS", "RELOP", "EQUALITYOP", "NEXTOP", "FUTUREOP", 
                       "GLOBALLYOP", "UNTILOP", "RELEASEOP", "UNTILNSOP", 
                       "RELEASENSOP", "ANDOP", "OROP", "QUANTIFIEROP", "SPQUANTIFIEROP", 
                       "PROPOP", "IMPLIESOP", "EQUIVOP", "SPACEOP", "CONST_TIME", 
-                      "CONST_FRAME", "CRT", "BOOLEAN", "REAL", "INT", "VAR", 
-                      "TIME_RNGE", "FRAME_RNGE", "PREDICATE" ]
+                      "CONST_FRAME", "CRT", "BOOLEAN", "INF", "REAL", "INT", 
+                      "VAR", "PREDICATE" ]
 
     RULE_stqlSpecification = 0
     RULE_phi = 1
@@ -255,45 +249,43 @@ class STQLParser ( Parser ):
     T__5=6
     T__6=7
     T__7=8
-    T__8=9
-    WS=10
-    SET=11
-    LPAREN=12
-    RPAREN=13
-    LBRACK=14
-    RBRACK=15
-    AT=16
-    COMMA=17
-    UNDERSCORE=18
-    NEGATION=19
-    MINUS=20
-    RELOP=21
-    EQUALITYOP=22
-    NEXTOP=23
-    FUTUREOP=24
-    GLOBALLYOP=25
-    UNTILOP=26
-    RELEASEOP=27
-    UNTILNSOP=28
-    RELEASENSOP=29
-    ANDOP=30
-    OROP=31
-    QUANTIFIEROP=32
-    SPQUANTIFIEROP=33
-    PROPOP=34
-    IMPLIESOP=35
-    EQUIVOP=36
-    SPACEOP=37
-    CONST_TIME=38
-    CONST_FRAME=39
-    CRT=40
-    BOOLEAN=41
+    WS=9
+    SET=10
+    LPAREN=11
+    RPAREN=12
+    LBRACK=13
+    RBRACK=14
+    AT=15
+    COMMA=16
+    UNDERSCORE=17
+    NEGATION=18
+    MINUS=19
+    RELOP=20
+    EQUALITYOP=21
+    NEXTOP=22
+    FUTUREOP=23
+    GLOBALLYOP=24
+    UNTILOP=25
+    RELEASEOP=26
+    UNTILNSOP=27
+    RELEASENSOP=28
+    ANDOP=29
+    OROP=30
+    QUANTIFIEROP=31
+    SPQUANTIFIEROP=32
+    PROPOP=33
+    IMPLIESOP=34
+    EQUIVOP=35
+    SPACEOP=36
+    CONST_TIME=37
+    CONST_FRAME=38
+    CRT=39
+    BOOLEAN=40
+    INF=41
     REAL=42
     INT=43
     VAR=44
-    TIME_RNGE=45
-    FRAME_RNGE=46
-    PREDICATE=47
+    PREDICATE=45
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -1012,8 +1004,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.NEXTOP)
                 self.state = 57
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,0,self._ctx)
+                if la_ == 1:
                     self.state = 56
                     self.interval()
 
@@ -1030,8 +1022,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.FUTUREOP)
                 self.state = 62
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,1,self._ctx)
+                if la_ == 1:
                     self.state = 61
                     self.interval()
 
@@ -1048,8 +1040,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.GLOBALLYOP)
                 self.state = 67
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,2,self._ctx)
+                if la_ == 1:
                     self.state = 66
                     self.interval()
 
@@ -1175,8 +1167,8 @@ class STQLParser ( Parser ):
                         self.match(STQLParser.UNTILOP)
                         self.state = 96
                         self._errHandler.sync(self)
-                        _la = self._input.LA(1)
-                        if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                        la_ = self._interp.adaptivePredict(self._input,4,self._ctx)
+                        if la_ == 1:
                             self.state = 95
                             self.interval()
 
@@ -1196,8 +1188,8 @@ class STQLParser ( Parser ):
                         self.match(STQLParser.RELEASEOP)
                         self.state = 102
                         self._errHandler.sync(self)
-                        _la = self._input.LA(1)
-                        if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                        la_ = self._interp.adaptivePredict(self._input,5,self._ctx)
+                        if la_ == 1:
                             self.state = 101
                             self.interval()
 
@@ -1217,8 +1209,8 @@ class STQLParser ( Parser ):
                         self.match(STQLParser.UNTILNSOP)
                         self.state = 108
                         self._errHandler.sync(self)
-                        _la = self._input.LA(1)
-                        if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                        la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
+                        if la_ == 1:
                             self.state = 107
                             self.interval()
 
@@ -1238,8 +1230,8 @@ class STQLParser ( Parser ):
                         self.match(STQLParser.RELEASENSOP)
                         self.state = 114
                         self._errHandler.sync(self)
-                        _la = self._input.LA(1)
-                        if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                        la_ = self._interp.adaptivePredict(self._input,7,self._ctx)
+                        if la_ == 1:
                             self.state = 113
                             self.interval()
 
@@ -1765,8 +1757,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.NEXTOP)
                 self.state = 141
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,10,self._ctx)
+                if la_ == 1:
                     self.state = 140
                     self.interval()
 
@@ -1783,8 +1775,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.FUTUREOP)
                 self.state = 146
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,11,self._ctx)
+                if la_ == 1:
                     self.state = 145
                     self.interval()
 
@@ -1801,8 +1793,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.GLOBALLYOP)
                 self.state = 151
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,12,self._ctx)
+                if la_ == 1:
                     self.state = 150
                     self.interval()
 
@@ -1821,8 +1813,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.UNTILOP)
                 self.state = 157
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
+                if la_ == 1:
                     self.state = 156
                     self.interval()
 
@@ -1841,8 +1833,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.RELEASEOP)
                 self.state = 164
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,14,self._ctx)
+                if la_ == 1:
                     self.state = 163
                     self.interval()
 
@@ -1861,8 +1853,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.UNTILNSOP)
                 self.state = 171
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,15,self._ctx)
+                if la_ == 1:
                     self.state = 170
                     self.interval()
 
@@ -1881,8 +1873,8 @@ class STQLParser ( Parser ):
                 self.match(STQLParser.RELEASENSOP)
                 self.state = 178
                 self._errHandler.sync(self)
-                _la = self._input.LA(1)
-                if _la==STQLParser.TIME_RNGE or _la==STQLParser.FRAME_RNGE:
+                la_ = self._interp.adaptivePredict(self._input,16,self._ctx)
+                if la_ == 1:
                     self.state = 177
                     self.interval()
 
@@ -2051,7 +2043,7 @@ class STQLParser ( Parser ):
                 self.state = 194
                 self.match(STQLParser.RPAREN)
                 pass
-            elif token in [STQLParser.T__2]:
+            elif token in [STQLParser.T__1]:
                 localctx = STQLParser.FuncAreaTauExprContext(self, localctx)
                 self.enterOuterAlt(localctx, 2)
                 self.state = 196
@@ -2061,7 +2053,7 @@ class STQLParser ( Parser ):
                 self.state = 198
                 self.match(STQLParser.REAL)
                 pass
-            elif token in [STQLParser.T__3]:
+            elif token in [STQLParser.T__2]:
                 localctx = STQLParser.FuncRatioAreaTauExprContext(self, localctx)
                 self.enterOuterAlt(localctx, 3)
                 self.state = 200
@@ -2836,9 +2828,6 @@ class STQLParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def TIME_RNGE(self):
-            return self.getToken(STQLParser.TIME_RNGE, 0)
-
         def COMMA(self):
             return self.getToken(STQLParser.COMMA, 0)
 
@@ -2860,14 +2849,17 @@ class STQLParser ( Parser ):
             else:
                 return self.getToken(STQLParser.REAL, i)
 
+        def INF(self, i:int=None):
+            if i is None:
+                return self.getTokens(STQLParser.INF)
+            else:
+                return self.getToken(STQLParser.INF, i)
+
         def RPAREN(self):
             return self.getToken(STQLParser.RPAREN, 0)
 
         def RBRACK(self):
             return self.getToken(STQLParser.RBRACK, 0)
-
-        def FRAME_RNGE(self):
-            return self.getToken(STQLParser.FRAME_RNGE, 0)
 
         def getRuleIndex(self):
             return STQLParser.RULE_interval
@@ -2895,72 +2887,37 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 18, self.RULE_interval)
         self._la = 0 # Token type
         try:
-            self.state = 288
-            self._errHandler.sync(self)
-            token = self._input.LA(1)
-            if token in [STQLParser.TIME_RNGE]:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 276
-                self.match(STQLParser.TIME_RNGE)
-                self.state = 277
-                _la = self._input.LA(1)
-                if not(_la==STQLParser.LPAREN or _la==STQLParser.LBRACK):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
-                self.state = 278
-                _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << STQLParser.T__0) | (1 << STQLParser.REAL) | (1 << STQLParser.INT))) != 0)):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
-                self.state = 279
-                self.match(STQLParser.COMMA)
-                self.state = 280
-                _la = self._input.LA(1)
-                if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << STQLParser.T__0) | (1 << STQLParser.REAL) | (1 << STQLParser.INT))) != 0)):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
-                self.state = 281
-                _la = self._input.LA(1)
-                if not(_la==STQLParser.RPAREN or _la==STQLParser.RBRACK):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
-                pass
-            elif token in [STQLParser.FRAME_RNGE]:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 282
-                self.match(STQLParser.FRAME_RNGE)
-                self.state = 283
-                _la = self._input.LA(1)
-                if not(_la==STQLParser.LPAREN or _la==STQLParser.LBRACK):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
-                self.state = 284
-                self.match(STQLParser.INT)
-                self.state = 285
-                self.match(STQLParser.COMMA)
-                self.state = 286
-                self.match(STQLParser.INT)
-                self.state = 287
-                _la = self._input.LA(1)
-                if not(_la==STQLParser.RPAREN or _la==STQLParser.RBRACK):
-                    self._errHandler.recoverInline(self)
-                else:
-                    self._errHandler.reportMatch(self)
-                    self.consume()
-                pass
+            self.enterOuterAlt(localctx, 1)
+            self.state = 276
+            _la = self._input.LA(1)
+            if not(_la==STQLParser.LPAREN or _la==STQLParser.LBRACK):
+                self._errHandler.recoverInline(self)
             else:
-                raise NoViableAltException(self)
-
+                self._errHandler.reportMatch(self)
+                self.consume()
+            self.state = 277
+            _la = self._input.LA(1)
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << STQLParser.INF) | (1 << STQLParser.REAL) | (1 << STQLParser.INT))) != 0)):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+            self.state = 278
+            self.match(STQLParser.COMMA)
+            self.state = 279
+            _la = self._input.LA(1)
+            if not((((_la) & ~0x3f) == 0 and ((1 << _la) & ((1 << STQLParser.INF) | (1 << STQLParser.REAL) | (1 << STQLParser.INT))) != 0)):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
+            self.state = 280
+            _la = self._input.LA(1)
+            if not(_la==STQLParser.RPAREN or _la==STQLParser.RBRACK):
+                self._errHandler.recoverInline(self)
+            else:
+                self._errHandler.reportMatch(self)
+                self.consume()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -3011,13 +2968,13 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 20, self.RULE_funcBB)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 290
-            self.match(STQLParser.T__1)
-            self.state = 291
+            self.state = 282
+            self.match(STQLParser.T__0)
+            self.state = 283
             self.match(STQLParser.LPAREN)
-            self.state = 292
+            self.state = 284
             self.match(STQLParser.VAR)
-            self.state = 293
+            self.state = 285
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3070,13 +3027,13 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 22, self.RULE_funcAreaTau)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 295
-            self.match(STQLParser.T__2)
-            self.state = 296
+            self.state = 287
+            self.match(STQLParser.T__1)
+            self.state = 288
             self.match(STQLParser.LPAREN)
-            self.state = 297
+            self.state = 289
             self.tau(0)
-            self.state = 298
+            self.state = 290
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3135,17 +3092,17 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 24, self.RULE_funcRatioAreaTau)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 300
-            self.match(STQLParser.T__3)
-            self.state = 301
+            self.state = 292
+            self.match(STQLParser.T__2)
+            self.state = 293
             self.match(STQLParser.LPAREN)
-            self.state = 302
+            self.state = 294
             self.funcAreaTau()
-            self.state = 303
+            self.state = 295
             self.match(STQLParser.COMMA)
-            self.state = 304
+            self.state = 296
             self.funcAreaTau()
-            self.state = 305
+            self.state = 297
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3212,25 +3169,25 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 26, self.RULE_funcDist)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 307
-            self.match(STQLParser.T__4)
-            self.state = 308
+            self.state = 299
+            self.match(STQLParser.T__3)
+            self.state = 300
             self.match(STQLParser.LPAREN)
-            self.state = 309
+            self.state = 301
             self.match(STQLParser.VAR)
-            self.state = 310
+            self.state = 302
             self.match(STQLParser.COMMA)
-            self.state = 311
+            self.state = 303
             self.match(STQLParser.CRT)
-            self.state = 312
+            self.state = 304
             self.match(STQLParser.COMMA)
-            self.state = 313
+            self.state = 305
             self.match(STQLParser.VAR)
-            self.state = 314
+            self.state = 306
             self.match(STQLParser.COMMA)
-            self.state = 315
+            self.state = 307
             self.match(STQLParser.CRT)
-            self.state = 316
+            self.state = 308
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3288,17 +3245,17 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 28, self.RULE_funcLatDist)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 318
-            self.match(STQLParser.T__5)
-            self.state = 319
+            self.state = 310
+            self.match(STQLParser.T__4)
+            self.state = 311
             self.match(STQLParser.LPAREN)
-            self.state = 320
+            self.state = 312
             self.match(STQLParser.VAR)
-            self.state = 321
+            self.state = 313
             self.match(STQLParser.COMMA)
-            self.state = 322
+            self.state = 314
             self.match(STQLParser.CRT)
-            self.state = 323
+            self.state = 315
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3356,17 +3313,17 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 30, self.RULE_funcLonDist)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 325
-            self.match(STQLParser.T__6)
-            self.state = 326
+            self.state = 317
+            self.match(STQLParser.T__5)
+            self.state = 318
             self.match(STQLParser.LPAREN)
-            self.state = 327
+            self.state = 319
             self.match(STQLParser.VAR)
-            self.state = 328
+            self.state = 320
             self.match(STQLParser.COMMA)
-            self.state = 329
+            self.state = 321
             self.match(STQLParser.CRT)
-            self.state = 330
+            self.state = 322
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3432,41 +3389,41 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 32, self.RULE_funcRatioLatLon)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 332
-            self.match(STQLParser.T__3)
-            self.state = 333
+            self.state = 324
+            self.match(STQLParser.T__2)
+            self.state = 325
             self.match(STQLParser.LPAREN)
-            self.state = 336
+            self.state = 328
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [STQLParser.T__5]:
-                self.state = 334
+            if token in [STQLParser.T__4]:
+                self.state = 326
                 self.funcLatDist()
                 pass
-            elif token in [STQLParser.T__6]:
-                self.state = 335
+            elif token in [STQLParser.T__5]:
+                self.state = 327
                 self.funcLonDist()
                 pass
             else:
                 raise NoViableAltException(self)
 
-            self.state = 338
+            self.state = 330
             self.match(STQLParser.COMMA)
-            self.state = 341
+            self.state = 333
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [STQLParser.T__5]:
-                self.state = 339
+            if token in [STQLParser.T__4]:
+                self.state = 331
                 self.funcLatDist()
                 pass
-            elif token in [STQLParser.T__6]:
-                self.state = 340
+            elif token in [STQLParser.T__5]:
+                self.state = 332
                 self.funcLonDist()
                 pass
             else:
                 raise NoViableAltException(self)
 
-            self.state = 343
+            self.state = 335
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3518,13 +3475,13 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 34, self.RULE_funcAreaTheta)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 345
-            self.match(STQLParser.T__2)
-            self.state = 346
+            self.state = 337
+            self.match(STQLParser.T__1)
+            self.state = 338
             self.match(STQLParser.LPAREN)
-            self.state = 347
+            self.state = 339
             self.match(STQLParser.VAR)
-            self.state = 348
+            self.state = 340
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3583,17 +3540,17 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 36, self.RULE_funcRatioArea)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 350
-            self.match(STQLParser.T__3)
-            self.state = 351
+            self.state = 342
+            self.match(STQLParser.T__2)
+            self.state = 343
             self.match(STQLParser.LPAREN)
-            self.state = 352
+            self.state = 344
             self.funcAreaTau()
-            self.state = 353
+            self.state = 345
             self.match(STQLParser.COMMA)
-            self.state = 354
+            self.state = 346
             self.funcAreaTau()
-            self.state = 355
+            self.state = 347
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3645,13 +3602,13 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 38, self.RULE_funcClass)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 357
-            self.match(STQLParser.T__7)
-            self.state = 358
+            self.state = 349
+            self.match(STQLParser.T__6)
+            self.state = 350
             self.match(STQLParser.LPAREN)
-            self.state = 359
+            self.state = 351
             self.match(STQLParser.VAR)
-            self.state = 360
+            self.state = 352
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3703,13 +3660,13 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 40, self.RULE_funcProb)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 362
-            self.match(STQLParser.T__8)
-            self.state = 363
+            self.state = 354
+            self.match(STQLParser.T__7)
+            self.state = 355
             self.match(STQLParser.LPAREN)
-            self.state = 364
+            self.state = 356
             self.match(STQLParser.VAR)
-            self.state = 365
+            self.state = 357
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re
@@ -3768,17 +3725,17 @@ class STQLParser ( Parser ):
         self.enterRule(localctx, 42, self.RULE_funcRatioProb)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 367
-            self.match(STQLParser.T__3)
-            self.state = 368
+            self.state = 359
+            self.match(STQLParser.T__2)
+            self.state = 360
             self.match(STQLParser.LPAREN)
-            self.state = 369
+            self.state = 361
             self.funcProb()
-            self.state = 370
+            self.state = 362
             self.match(STQLParser.COMMA)
-            self.state = 371
+            self.state = 363
             self.funcProb()
-            self.state = 372
+            self.state = 364
             self.match(STQLParser.RPAREN)
         except RecognitionException as re:
             localctx.exception = re

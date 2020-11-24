@@ -77,7 +77,6 @@ class STQLVisitor(ParseTreeVisitor):
 
         return MTL.Finally(bounds[0], bounds[1], pred, self.mode)
 
-
     # Visit a parse tree produced by STQLParser#parenPhiExpr.
     def visitParenPhiExpr(self, ctx:STQLParser.ParenPhiExprContext):
         return self.visit(ctx.getRuleContext().getChild(1))
@@ -110,7 +109,6 @@ class STQLVisitor(ParseTreeVisitor):
         else:
             return None
 
-
     # Visit a parse tree produced by STQLParser#opFreezeTimeExpr.
     def visitOpFreezeTimeExpr(self, ctx:STQLParser.OpFreezeTimeExprContext):
         return self.visitChildren(ctx)
@@ -138,13 +136,11 @@ class STQLVisitor(ParseTreeVisitor):
         
         return MTL.Or(MTL.Not(pred1), pred2, self.mode)
 
-
     # Visit a parse tree produced by STQLParser#opNegExpr.
     def visitOpNegExpr(self, ctx:STQLParser.OpNegExprContext):
         pred = self.visit(ctx.getRuleContext().getChild(1))
 
         return MTL.Not(pred, self.mode)
-
 
     # Visit a parse tree produced by STQLParser#funcBoundingBoxTauExpr.
     def visitFuncBoundingBoxTauExpr(self, ctx:STQLParser.FuncBoundingBoxTauExprContext):
@@ -304,11 +300,10 @@ class STQLVisitor(ParseTreeVisitor):
     # Visit a parse tree produced by STQLParser#interval.
     def visitInterval(self, ctx:STQLParser.IntervalContext):
         bounds = []
-        bounds.append(float(ctx.getRuleContext().getChild(1).getText()))
-        bounds.append(float(ctx.getRuleContext().getChild(3).getText()))
+        bounds.append(float(ctx.getRuleContext().getChild(2).getText()))
+        bounds.append(float(ctx.getRuleContext().getChild(4).getText()))
 
         return bounds
-
 
     # Visit a parse tree produced by STQLParser#funcBB.
     def visitFuncBB(self, ctx:STQLParser.FuncBBContext):
@@ -368,7 +363,6 @@ class STQLVisitor(ParseTreeVisitor):
     # Visit a parse tree produced by STQLParser#funcRatioProb.
     def visitFuncRatioProb(self, ctx:STQLParser.FuncRatioProbContext):
         return self.visitChildren(ctx)
-
 
 
 del STQLParser
