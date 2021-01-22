@@ -312,62 +312,62 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#funcBB.
     def visitFuncBB(self, ctx:STQLParser.FuncBBContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcAreaTau.
     def visitFuncAreaTau(self, ctx:STQLParser.FuncAreaTauContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcRatioAreaTau.
     def visitFuncRatioAreaTau(self, ctx:STQLParser.FuncRatioAreaTauContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcDist.
     def visitFuncDist(self, ctx:STQLParser.FuncDistContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcLatDist.
     def visitFuncLatDist(self, ctx:STQLParser.FuncLatDistContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcLonDist.
     def visitFuncLonDist(self, ctx:STQLParser.FuncLonDistContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcRatioLatLon.
     def visitFuncRatioLatLon(self, ctx:STQLParser.FuncRatioLatLonContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcAreaTheta.
     def visitFuncAreaTheta(self, ctx:STQLParser.FuncAreaThetaContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcRatioArea.
     def visitFuncRatioArea(self, ctx:STQLParser.FuncRatioAreaContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcClass.
     def visitFuncClass(self, ctx:STQLParser.FuncClassContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcProb.
     def visitFuncProb(self, ctx:STQLParser.FuncProbContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcRatioProb.
     def visitFuncRatioProb(self, ctx:STQLParser.FuncRatioProbContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
 
