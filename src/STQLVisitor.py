@@ -20,7 +20,7 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#opReleaseNotStrictExpr.
     def visitOpReleaseNotStrictExpr(self, ctx:STQLParser.OpReleaseNotStrictExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opUntilExpr.
@@ -35,12 +35,12 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#timeConstraintExpr.
     def visitTimeConstraintExpr(self, ctx:STQLParser.TimeConstraintExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#piExpr.
     def visitPiExpr(self, ctx:STQLParser.PiExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opNextExpr.
@@ -52,17 +52,17 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#variableEquivalenceExpr.
     def visitVariableEquivalenceExpr(self, ctx:STQLParser.VariableEquivalenceExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opUntilNotStrictExpr.
     def visitOpUntilNotStrictExpr(self, ctx:STQLParser.OpUntilNotStrictExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#thetaExpr.
     def visitThetaExpr(self, ctx:STQLParser.ThetaExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#predicateExpr.
@@ -85,7 +85,7 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#frameConstraintExpr.
     def visitFrameConstraintExpr(self, ctx:STQLParser.FrameConstraintExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opGloballyExpr.
@@ -113,22 +113,22 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#opFreezeTimeExpr.
     def visitOpFreezeTimeExpr(self, ctx:STQLParser.OpFreezeTimeExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#tauExpr.
     def visitTauExpr(self, ctx:STQLParser.TauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#boolAtom.
     def visitBoolAtom(self, ctx:STQLParser.BoolAtomContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opReleaseExpr.
     def visitOpReleaseExpr(self, ctx:STQLParser.OpReleaseExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opPropExpr.
@@ -148,157 +148,157 @@ class STQLVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by STQLParser#funcBoundingBoxTauExpr.
     def visitFuncBoundingBoxTauExpr(self, ctx:STQLParser.FuncBoundingBoxTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opGloballyTauExpr.
     def visitOpGloballyTauExpr(self, ctx:STQLParser.OpGloballyTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opReleaseTauExpr.
     def visitOpReleaseTauExpr(self, ctx:STQLParser.OpReleaseTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#parenTauExpr.
     def visitParenTauExpr(self, ctx:STQLParser.ParenTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opUntilNotStrictTauExpr.
     def visitOpUntilNotStrictTauExpr(self, ctx:STQLParser.OpUntilNotStrictTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opFutureTauExpr.
     def visitOpFutureTauExpr(self, ctx:STQLParser.OpFutureTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opReleaseNotStrictTauExpr.
     def visitOpReleaseNotStrictTauExpr(self, ctx:STQLParser.OpReleaseNotStrictTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opSpaceTauExpr.
     def visitOpSpaceTauExpr(self, ctx:STQLParser.OpSpaceTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#setTauExpr.
     def visitSetTauExpr(self, ctx:STQLParser.SetTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opLogicalTauExpr.
     def visitOpLogicalTauExpr(self, ctx:STQLParser.OpLogicalTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opNextTauExpr.
     def visitOpNextTauExpr(self, ctx:STQLParser.OpNextTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opUntilTauExpr.
     def visitOpUntilTauExpr(self, ctx:STQLParser.OpUntilTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#opNegationTauExpr.
     def visitOpNegationTauExpr(self, ctx:STQLParser.OpNegationTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#parenPiExpr.
     def visitParenPiExpr(self, ctx:STQLParser.ParenPiExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcAreaTauExpr.
     def visitFuncAreaTauExpr(self, ctx:STQLParser.FuncAreaTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcRatioAreaTauExpr.
     def visitFuncRatioAreaTauExpr(self, ctx:STQLParser.FuncRatioAreaTauExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#parenThetaExpr.
     def visitParenThetaExpr(self, ctx:STQLParser.ParenThetaExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcEuclideanDistancExpr.
     def visitFuncEuclideanDistancExpr(self, ctx:STQLParser.FuncEuclideanDistancExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcLatituteExpr.
     def visitFuncLatituteExpr(self, ctx:STQLParser.FuncLatituteExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcLongitudeExpr.
     def visitFuncLongitudeExpr(self, ctx:STQLParser.FuncLongitudeExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcRatioLatLonExpr.
     def visitFuncRatioLatLonExpr(self, ctx:STQLParser.FuncRatioLatLonExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcAreaThetaExpr.
     def visitFuncAreaThetaExpr(self, ctx:STQLParser.FuncAreaThetaExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcRatioAreaThetaExpr.
     def visitFuncRatioAreaThetaExpr(self, ctx:STQLParser.FuncRatioAreaThetaExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcClassExpr.
     def visitFuncClassExpr(self, ctx:STQLParser.FuncClassExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcCompareClassExpr.
     def visitFuncCompareClassExpr(self, ctx:STQLParser.FuncCompareClassExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcProbExpr.
     def visitFuncProbExpr(self, ctx:STQLParser.FuncProbExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#funcRatioProbExpr.
     def visitFuncRatioProbExpr(self, ctx:STQLParser.FuncRatioProbExprContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#freezeTime.
     def visitFreezeTime(self, ctx:STQLParser.FreezeTimeContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#timeVarDecl.
     def visitTimeVarDecl(self, ctx:STQLParser.TimeVarDeclContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#objVarDecl.
     def visitObjVarDecl(self, ctx:STQLParser.ObjVarDeclContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#varList.
     def visitVarList(self, ctx:STQLParser.VarListContext):
-        return self.visitChildren(ctx)
+        return NotImplemented
 
 
     # Visit a parse tree produced by STQLParser#interval.
