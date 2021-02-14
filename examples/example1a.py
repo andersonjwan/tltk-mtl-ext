@@ -1,6 +1,5 @@
 import sys
 import tltk_mtl as MTL
-import tltk_mtl_ext as MTLE
 import numpy as np
 
 Ar3 = -1
